@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 function CardItem({ item, isGrid }) {
 	const inputRef = useRef();
 	const navigate = useNavigate();
-	const [isImgExist, setIsImgExist] = useState(true);
 	const [isUpdate, setIsUpdate] = useState(false);
 	const [updateItem, setUpdateItem] = useState('');
 	const [isChange, setIsChange] = useState(false);
@@ -14,12 +13,11 @@ function CardItem({ item, isGrid }) {
 		e.target.src = '	https://bitsofco.de/content/images/2018/12/Screenshot-2018-12-16-at-21.06.29.png';
 	};
 	const handleUpdate = (item) => {
-		console.log(inputRef);
 		setIsUpdate(true);
 	};
 	const handleChangeValue = () => {
 		let val = inputRef.current.value;
-		if (val == item.Title) {
+		if (val === item.Title) {
 			setUpdateItem(item.Title);
 			setIsUpdate(true);
 		} else {
@@ -31,9 +29,11 @@ function CardItem({ item, isGrid }) {
 	};
 
 	const handleProductPage = (id) => {
-		navigate(`/${id}`, { state: item });
+		//another way to send the data item to product page
+		// navigate(`/${id}`, { state: item });
+		navigate(`/${id}`);
 	};
-	useEffect(() => {}, [null]);
+	useEffect(() => {}, []);
 	return (
 		<div className={isGrid ? 'col-md-3' : 'col-md-6 offset-md-3'}>
 			<div className="card card-product-grid">

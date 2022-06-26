@@ -11,16 +11,15 @@ function CardsItems({ data, isGrid, title }) {
 		<section className="section-name">
 			<div className="container">
 				<header className="section-heading">
-					<h3 className="section-title">{title}</h3>
+					<h3 className="section-title text-center">{title}</h3>
 				</header>
-
 				<div className={isGrid ? 'row' : 'col'}>
 					{items.length > 0 ? (
 						items.map((item, i) => {
 							return <CardItem isGrid={isGrid} key={i} item={item} />;
 						})
 					) : (
-						<h1 className="text-red">this item not exits</h1>
+						<h1 className="text-red text-center">this item not found......</h1>
 					)}
 				</div>
 			</div>

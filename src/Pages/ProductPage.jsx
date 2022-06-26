@@ -21,9 +21,9 @@ function ProductPage() {
 	return (
 		<div className="container">
 			<div>
-				<nav>
+				<button>
 					<Link to="/">Home</Link>
-				</nav>
+				</button>
 			</div>
 			<h2 className="text-center">product page</h2>
 			{item && (

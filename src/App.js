@@ -28,28 +28,16 @@ function App() {
 								<h6 className="title">Social</h6>
 								<ul className="list-unstyled">
 									<li>
-										<a href="#">
-											{' '}
-											<i className="fab fa-facebook"></i> Facebook{' '}
-										</a>
+										<i className="fab fa-facebook"></i> Facebook{' '}
 									</li>
 									<li>
-										<a href="#">
-											{' '}
-											<i className="fab fa-twitter"></i> Twitter{' '}
-										</a>
+										<i className="fab fa-twitter"></i> Twitter{' '}
 									</li>
 									<li>
-										<a href="#">
-											{' '}
-											<i className="fab fa-instagram"></i> Instagram{' '}
-										</a>
+										<i className="fab fa-instagram"></i> Instagram{' '}
 									</li>
 									<li>
-										<a href="#">
-											{' '}
-											<i className="fab fa-youtube"></i> Youtube{' '}
-										</a>
+										<i className="fab fa-youtube"></i> Youtube{' '}
 									</li>
 								</ul>
 							</aside>
