@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import ProductPage from './Pages/ProductPage';
+
 function App() {
 	return (
 		<div className="App">
@@ -26,7 +27,7 @@ function App() {
 						<div className="row">
 							<aside className="col-md">
 								<h6 className="title">Social</h6>
-								<ul className="list-unstyled">
+								<ul>
 									<li>
 										<i className="fab fa-facebook"></i> Facebook{' '}
 									</li>
